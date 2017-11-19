@@ -1,6 +1,6 @@
 # rankwatch17_py_csvbreakdown
 read a csv file from one directory and write the text to anther csv file in another director
-### requirements libraries
+### libraries used
 ##### import csv
 it is used to perform differet operation in csv files
 ##### import glob
