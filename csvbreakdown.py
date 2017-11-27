@@ -26,7 +26,7 @@ def read_csv(file_name):									#function for reading a file
     with open(file_name, 'rb') as csvfile:					#open to file to read in binary format
       reader = csv.reader(csvfile, delimiter=',')
       for row in reader:									#iterate each line of csv file
-        create_csv(row, created_files)						#call to create_csv function
+        create_csv(row,row[0] in created_files)						#call to create_csv function and checks whether same date is present or not
         created_files.append(row[0])						
   except Exception as e:									#catch an exception
     print 'Facing error while reading this %s csv file ' % file_name
